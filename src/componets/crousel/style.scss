@@ -1,0 +1,488 @@
+
+.crousel{
+    margin-bottom: 100px;
+    .carousel {
+    margin-top: 20px;
+    overflow-x: hidden;
+    display: flex;
+    .carouselTitle {
+        font-size: 24px;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    .arrow{
+        align-self: center;
+        justify-content: space-between;
+        font-size: 100px;
+        font-weight: 900;
+        padding-bottom:50px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        transform: translateY(-50%);
+        cursor: pointer;
+        opacity: 0.6;
+        z-index: 4;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .carouselLeftNav {
+        left: 0px;
+        margin-right: 5px;
+    }
+    .carouselRighttNav {
+        right: 0px;
+        margin-left: 5px;
+    }
+    .loadingSkeleton {
+        display: flex;
+        gap: 10px;
+        overflow-y: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px;
+        .skeletonItem {
+            width: 125px;
+            flex-shrink: 0;
+            .posterBlock {
+                border-radius: 12px;
+                width: 100%;
+                aspect-ratio: 1 / 1.5;
+                margin-bottom: 30px;
+            }
+            .textBlock {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    width: 100%;
+                    height: 20px;
+                    margin-bottom: 10px;
+                }
+                .date {
+                    width: 75%;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .carouselItems {
+        display: flex;
+        gap: 10px;
+        overflow-y: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px;
+        .carouselItem {
+            width: 150px;
+            height: 360px;
+            cursor: pointer;
+            flex-shrink: 0;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            .posterBlock {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 1 / 1.5;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                padding: 10px;
+                .lazy-load-image-background {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .circleRating {
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    top: 30px;
+                    background-color: white;
+                    flex-shrink: 0;
+                }
+                .genres {
+                    background-color: rgba(127, 214, 255, 0.27);
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+                }
+            }
+            .textBlock {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    line-height: 15px;
+                    height:30px;
+                    overflow: hidden;
+                }
+                .date {
+                    font-size: 12px;
+                    opacity: 0.5;
+                }
+                .rating{
+                    font-size: 15px;
+                    color: rgba(240, 255, 255, 0.4);
+                    background-color: rgba(0, 0, 0, 0.227);
+                    width: 40%;
+                    padding: 5px;
+                    padding-left: 12px;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .carouselItems::-webkit-scrollbar {
+        overflow-x: hidden;
+        display: none;
+      }
+    
+}
+}
+@media screen and (max-width:600px) {
+    
+.crousel{
+    margin-bottom: 100px;
+    .carousel {
+    margin-top: 20px;
+    overflow-x: hidden;
+    display: flex;
+    .carouselTitle {
+        font-size: 24px;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+    .arrow{
+        display: none;
+        align-self: center;
+        justify-content: space-between;
+        font-size: 100px;
+        font-weight: 900;
+        padding-bottom:50px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        transform: translateY(-50%);
+        cursor: pointer;
+        opacity: 0.6;
+        z-index: 4;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .carouselLeftNav {
+        left: 0px;
+        margin-right: 5px;
+    }
+    .carouselRighttNav {
+        right: 0px;
+        margin-left: 5px;
+    }
+    .loadingSkeleton {
+        display: flex;
+        gap: 10px;
+        overflow-y: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px;
+        .skeletonItem {
+            width: 125px;
+            flex-shrink: 0;
+            .posterBlock {
+                border-radius: 12px;
+                width: 100%;
+                aspect-ratio: 1 / 1.5;
+                margin-bottom: 30px;
+            }
+            .textBlock {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    width: 100%;
+                    height: 20px;
+                    margin-bottom: 10px;
+                }
+                .date {
+                    width: 75%;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .carouselItems {
+        display: flex;
+        gap: 10px;
+        overflow-y: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px;
+        .carouselItem {
+            width: 125px;
+            height: 330px;
+            cursor: pointer;
+            flex-shrink: 0;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            .posterBlock {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 1 / 1.5;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                padding: 10px;
+                .lazy-load-image-background {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .circleRating {
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    top: 30px;
+                    background-color: white;
+                    flex-shrink: 0;
+                }
+                .genres {
+                    display: none;
+                    background-color: rgba(127, 214, 255, 0.27);
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+                }
+            }
+            .textBlock {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    line-height: 15px;
+                    overflow: hidden;
+                }
+                .date {
+                    font-size: 14px;
+                    opacity: 0.5;
+                }
+                .rating{
+                    font-size: 15px;
+                    color: rgba(240, 255, 255, 0.4);
+                    background-color: rgba(0, 0, 0, 0.227);
+                    width: 40%;
+                    padding: 5px;
+                    padding-left: 12px;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .carouselItems::-webkit-scrollbar {
+        overflow-x: hidden;
+        display: none;
+      }
+    
+}
+}
+
+}
+@media screen and (max-width:400px) {
+    
+    .crousel{
+        width: 145%;
+        margin-bottom: 100px;
+        .carousel {
+        margin-top: 20px;
+        display: flex;
+        .carouselTitle {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .arrow{
+            display: none;
+            align-self: center;
+            justify-content: space-between;
+            font-size: 100px;
+            font-weight: 900;
+            padding-bottom:50px;
+            color: rgb(255, 255, 255);
+            position: relative;
+            transform: translateY(-50%);
+            cursor: pointer;
+            opacity: 0.6;
+            z-index: 4;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .carouselLeftNav {
+            left: 0px;
+            margin-right: 5px;
+        }
+        .carouselRighttNav {
+            right: 0px;
+            margin-left: 5px;
+        }
+        .loadingSkeleton {
+            display: flex;
+            gap: 10px;
+            overflow-y: hidden;
+            margin-right: -20px;
+            margin-left: -20px;
+            padding: 0 20px;
+            .skeletonItem {
+                width: 125px;
+                flex-shrink: 0;
+                .posterBlock {
+                    border-radius: 12px;
+                    width: 100%;
+                    aspect-ratio: 1 / 1.5;
+                    margin-bottom: 30px;
+                }
+                .textBlock {
+                    display: flex;
+                    flex-direction: column;
+                    .title {
+                        width: 100%;
+                        height: 20px;
+                        margin-bottom: 10px;
+                    }
+                    .date {
+                        width: 75%;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        .carouselItems {
+            display: flex;
+            gap: 10px;
+            overflow-y: hidden;
+            margin-right: -20px;
+            margin-left: -20px;
+            padding: 0 20px;
+            .carouselItem {
+                width: 125px;
+                height: 330px;
+                cursor: pointer;
+                flex-shrink: 0;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                .posterBlock {
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 1 / 1.5;
+                    background-size: cover;
+                    background-position: center;
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    padding: 10px;
+                    .lazy-load-image-background {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    .circleRating {
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        top: 30px;
+                        background-color: white;
+                        flex-shrink: 0;
+                    }
+                    .genres {
+                        display: none;
+                        background-color: rgba(127, 214, 255, 0.27);
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        position: relative;
+                    }
+                }
+                .textBlock {
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    .title {
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        line-height: 15px;
+                        overflow: hidden;
+                    }
+                    .date {
+                        font-size: 14px;
+                        opacity: 0.5;
+                    }
+                    .rating{
+                        font-size: 15px;
+                        color: rgba(240, 255, 255, 0.4);
+                        background-color: rgba(0, 0, 0, 0.227);
+                        width: 40%;
+                        padding: 5px;
+                        padding-left: 12px;
+                        margin-top: 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .carouselItems::-webkit-scrollbar {
+            overflow-x: hidden;
+            display: none;
+          }
+        
+    }
+    }
+    
+    }

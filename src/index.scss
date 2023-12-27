@@ -1,0 +1,12 @@
+$bg-color:rgba(27, 26, 26, 0.985);
+$theme-color:rgb(80, 175, 212);
+$theme-color-dark:rgb(46, 111, 137);
+*{
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+}
+body{
+  background-color: $bg-color;
+  overflow-x: hidden;
+}

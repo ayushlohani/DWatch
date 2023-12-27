@@ -1,0 +1,315 @@
+.detailsBanner{
+    .cast{
+        background-color: aquamarine;
+        margin:0% 7% 0% 7%;
+        height: 200px;
+    }
+    .backdrop{
+        width: 100%;
+        height: 90vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        opacity: 0.2;
+        img{
+            width: 100%;
+            height: 90vh;
+        }
+    }
+    .detailinfo{
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        top:10%;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        .poster{
+            width: 25%;
+            height: 80%;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.456);
+            }
+            .adult{
+                background-color: red;
+                color: azure;
+                border-radius: 2px;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 1%;
+                left: 30%;
+            }
+        }
+        .other-info{
+            width: 50%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            color: azure;
+            .summary{
+                height: 60%;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+                .title{
+                    font-size: xx-large;
+                    margin-bottom: 20px;
+                }
+                .summarygenres{
+                    //margin: 10px;
+                    .summary-genres{
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 10px;
+                        padding: 5px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color:rgba(62, 103, 161, 0.715) ;
+                    }
+                }
+                .summary-info{
+                    margin-top: 30px;
+                    .overview-title{
+                        font-size: x-large;
+                    }
+                    hr{
+                        margin-bottom: 10px;
+                    }
+                    .overview{
+                        height: 30%;
+                        color: rgba(240, 255, 255, 0.814);
+                    }
+                }
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                .summary-info::-webkit-scrollbar {
+                    display: none;
+                }
+  
+                /* Hide scrollbar for IE, Edge and Firefox */
+                .summary-info {
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none;  /* Firefox */
+                }
+                .summary-btn{
+                    margin-top: 7%;
+                    display: flex;
+                    align-items: center;
+                    .rating{
+                        background-color: rgba(100, 244, 244, 0.3);
+                        padding:8px 20px 8px 20px;
+                        border:none ;
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: center;
+                        font-size: larger;
+                    }
+                    .trailer-btn{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 40px;
+                    }
+                    .trailer-btn:hover{
+                        color: rgb(255, 0, 93);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+        .details{
+            font-size: larger;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width:"600px"){
+    .detailsBanner{
+        .backdrop{
+            width: 100%;
+            height: 120vh;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            opacity: 0.2;
+            img{
+                width: 100%;
+                height: 120vh;
+            }
+        }
+        .detailinfo{
+            width: 100%;
+            height: 1000px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30%;
+            .poster{
+                width: 40%;
+                height: 30%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.456);
+                }
+            }
+            .other-info{
+                width: 50%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                color: azure;
+                .summary{
+                    height: 60%;
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    .title{
+                        margin-top: 10%;
+                        font-size: x-large;
+                        margin-bottom: 10%;
+                    }
+                    .summarygenres{
+                        //background-color: aqua;
+                        display: flex;
+                        justify-content: space-around;
+                        .summary-genres{
+                            height: 25px;
+                            width: 30%;
+                            align-self: center;
+                            padding-right: 10px;
+                            border: none;
+                            overflow-y: hidden;
+                            border-radius: 5px;
+                            background-color:rgba(62, 103, 161, 0.715) ;
+                        }
+                    }
+                    .summary-info{
+                        margin-top: 30px;
+                        height: 30%;
+                        overflow: scroll;
+                        overflow-x: hidden;
+                    }
+                    /* Hide scrollbar for Chrome, Safari and Opera */
+                    .summary-info::-webkit-scrollbar {
+                        display: none;
+                    }
+      
+                    /* Hide scrollbar for IE, Edge and Firefox */
+                    .summary-info {
+                        -ms-overflow-style: none;  /* IE and Edge */
+                        scrollbar-width: none;  /* Firefox */
+                    }
+                    .summary-btn{
+                        margin-top: 10%;
+                    }
+                }
+                .cast{
+                    height: 40%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:"400px"){
+    .detailsBanner{
+        .backdrop{
+            width: 100%;
+            height: 100vh;
+            opacity: 0.2;
+            overflow: visible;
+            img{
+                width: 140%;
+                height: 80vh;
+            }
+        }
+        .detailinfo{
+            width: 140%;
+            height: 1000px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30%;
+            .poster{
+                width: 50%;
+                height: 40%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.456);
+                }
+            }
+            .other-info{
+                width: 50%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                color: azure;
+                .summary{
+                    height: 60%;
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    .title{
+                        margin-top: 10%;
+                        font-size: x-large;
+                        margin-bottom: 10%;
+                    }
+                    .summarygenres{
+                        //background-color: aqua;
+                        display: flex;
+                        justify-content: space-around;
+                        .summary-genres{
+                            height: 25px;
+                            width: 40%;
+                            align-self: center;
+                            padding-right: 15px;
+                            border: none;
+                            overflow-y: hidden;
+                            border-radius: 5px;
+                            background-color:rgba(62, 103, 161, 0.715) ;
+                        }
+                    }
+                    .summary-info{
+                        margin-top: 30px;
+                        height: 30%;
+                        overflow: scroll;
+                        overflow-x: hidden;
+                    }
+                    /* Hide scrollbar for Chrome, Safari and Opera */
+                    .summary-info::-webkit-scrollbar {
+                        display: none;
+                    }
+      
+                    /* Hide scrollbar for IE, Edge and Firefox */
+                    .summary-info {
+                        -ms-overflow-style: none;  /* IE and Edge */
+                        scrollbar-width: none;  /* Firefox */
+                    }
+                    .summary-btn{
+                        margin-top: 7%;
+                    }
+                }
+                .cast{
+                    height: 40%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+}

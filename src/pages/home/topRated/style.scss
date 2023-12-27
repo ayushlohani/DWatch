@@ -1,0 +1,33 @@
+.topRated{
+    color: azure;
+    margin: 5%;
+    margin-top: 8%;
+    height: 400px;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        align-items: center;
+        .title{
+            font-size: x-large;
+        }
+    }
+}
+@media screen and (max-width:"400px") {
+    .topRated{
+        color: azure;
+        margin: 5%;
+        margin-top: 8%;
+        height: 400px;
+        .head{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 20px;
+            align-items: center;
+            width: 150%;
+            .title{
+                font-size: x-large;
+            }
+        }
+    }
+}
