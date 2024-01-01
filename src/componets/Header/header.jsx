@@ -27,10 +27,10 @@ const Header = () => {
 
   //handle movie and series link
   const handleNavigation = (val) => {
-    if (val === "Movies") {
-      navigate("/explore/Movies");
+    if (val === "movie") {
+      navigate("/explore/movie");
     } else {
-      navigate("/explore/Series");
+      navigate("/explore/tv");
     }
   };
 
@@ -51,7 +51,7 @@ const Header = () => {
           <li
             className="movies nav-li"
             onClick={() => {
-              handleNavigation("Movies");
+              handleNavigation("movie");
             }}
           >
             Movies
@@ -59,7 +59,7 @@ const Header = () => {
           <li
             className="series nav-li"
             onClick={() => {
-              handleNavigation("Series");
+              handleNavigation("tv");
             }}
           >
             Web Series

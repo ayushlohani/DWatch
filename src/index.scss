@@ -10,3 +10,11 @@ body{
   background-color: $bg-color;
   overflow-x: hidden;
 }
+@media screen and (max-width:400px) {
+  body{
+    background-color: $bg-color;
+    overflow-x: hidden;
+    transform: scale(1);
+    width: 75%;
+  }
+}

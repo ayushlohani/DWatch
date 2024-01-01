@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <SearchResult />,
       },
       {
-        path: "/explore/:mediatype",
+        path: "/explore/:mediaType",
         element: <Explore />,
       },
       {

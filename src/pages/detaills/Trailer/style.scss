@@ -1,0 +1,39 @@
+.trailer{
+    width: 60%;
+    height: 500px;
+    border:3px solid rgb(255, 0, 93);;
+    position: absolute;
+    display: flex;
+    padding: 0%;
+    left:20%;
+    top:10%;
+}
+.close{
+    
+    position: absolute;
+    left: 100%;
+    bottom:95%;
+}
+.close:hover{
+    cursor: pointer;
+    background-color: rgba(176, 185, 181, 0.148);
+    color: rgb(250, 250, 250);
+}
+@media screen and (max-width:1000px) {
+    .trailer{
+        width: 60%;
+        height: 300px;
+        border:3px solid rgb(255, 0, 93);;
+        position: absolute;
+        display: flex;
+        padding: 0%;
+        left:20%;
+        top:10%;
+    }
+}
+@media screen and (max-width:600px){
+    .trailer{
+        opacity: 0;
+        display: none;
+    }
+}

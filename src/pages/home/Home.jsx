@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import HeroBanner from "./HomeBanner.jsx/HeroBanner";
 import "./style.scss";
 import Trending from "./trending/Trending";

@@ -41,7 +41,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
           {data?.map((item) => {
             const posterUrl = item.poster_path
               ? url.poster + item.poster_path
-              : PosterFallback;
+              : "/no-poster.jpg";
             return (
               <div
                 key={item.id}

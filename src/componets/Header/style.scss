@@ -188,9 +188,11 @@ header{
                 height: 150px;
                 color: azure;
                 position: absolute;
-                left: 0;
+                width:0.1px;
+                height: 0.1px;
+                overflow: hidden;
                 top:6vh;
-                opacity: 0;
+                opacity: 0.5;
                 transition:opacity  0.5s ,top 0.5s;
                 li{
                     text-decoration: none;

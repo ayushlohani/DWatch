@@ -1,0 +1,38 @@
+.search-result{
+    margin-left: 5%;
+    margin-right: 2%;
+    .handleheader{
+        height: 100px;
+    }
+    .title{
+        font-size: x-large;
+        color: azure;
+        margin-bottom: 50px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .search-result{
+        width: 140%;
+        .handleheader{
+            height: 100px;
+        }
+        .title{
+            font-size: x-large;
+            color: azure;
+            margin-bottom: 50px;
+        }
+        .cards{
+            display: flex;
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+    
+    }
+}

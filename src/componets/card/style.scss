@@ -1,59 +1,55 @@
 .movieCard {
-    width: calc(50% - 5px);
-    margin-bottom: 25px;
+    width: 150px;
+    height: 300px;
     cursor: pointer;
     flex-shrink: 0;
-    .posterBlock {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 70px;
+    .posterBlock{
         position: relative;
-        width: 100%;
-        aspect-ratio: 1 / 1.5;
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 30px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 10px;
-        transition: all ease 0.5s;
-        .lazy-load-image-background {
+                width: 100%;
+                aspect-ratio: 1 / 1.5;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                padding: 10px;
+        img{
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 12px;
+            border-radius: 7px;
             overflow: hidden;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-        .genres {
-           position: relative;
-           display: flex;
-           flex-flow: wrap;
-           justify-content: flex-end;
+            object-fit: cover;
+            object-position: center;
         }
     }
-    .textBlock {
-        color: white;
+    .textBlock{
+        width: 100%;
+        height: 50%;
+        color: azure;
+        padding-left:10px;
         display: flex;
         flex-direction: column;
         .title {
             font-size: 16px;
-            margin-bottom: 10px;
-            line-height: 24px;
+            line-height: 15px;
+            height:30px;
+            overflow: hidden;
         }
         .date {
-            font-size: 14px;
+            font-size: 12px;
             opacity: 0.5;
         }
     }
-    &:hover {
-        .posterBlock {
-            opacity: 0.5;
-        }
+    :hover{
+        cursor: pointer;
     }
 }

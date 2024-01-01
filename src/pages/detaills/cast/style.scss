@@ -1,0 +1,128 @@
+.cast-page{
+    margin:0% 7% 0% 7.5%;
+    color: azure;
+    font-size: xx-large;
+    height: 400px;
+    margin-top: 20px;
+    .cast{
+        height: 350px;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        font-size: 15px;
+        .left-arrow{
+            position: absolute;
+            left:5%;
+            margin-bottom: 100px;
+            justify-self: flex-start;
+            opacity: 0.7;
+        }
+        .right-arrow{
+            position: absolute;
+            opacity: 0.7;
+            right:6%;
+            margin-bottom: 100px;
+            justify-self: flex-end;
+        }
+        .arrow:hover{
+            cursor: pointer;
+            opacity:1;
+        }
+        .cast-card{
+            display: flex;
+            flex-direction: column;
+            width:100px;
+            max-height: 70%;
+            border-radius: 10px;
+            margin-right: 30px;
+            color: rgba(240, 255, 255, 0.699);
+            img{
+                height: 200px;
+                width: 100px;
+                border-radius: 10px;
+                box-shadow: 2px 3px 4px black;
+            }
+            .charac{
+                height: 50px;
+                overflow: hidden;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .name{
+                margin-top: 20px;
+                color: rgba(240, 255, 255, 0.847);
+            }
+        }
+    }
+    .cast::-webkit-scrollbar{
+        display: none;
+    }
+}
+@media screen and (max-width:400px) {
+    .cast-page{
+        margin:0% 7% 0% 7.5%;
+        color: azure;
+        font-size: xx-large;
+        height: 400px;
+        margin-top: 20px;
+        .cast{
+            width: 150%;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            font-size: 15px;
+            .left-arrow{
+                position: absolute;
+                left:5%;
+                margin-bottom: 100px;
+                justify-self: flex-start;
+                opacity: 0.7;
+            }
+            .right-arrow{
+                position: absolute;
+                opacity: 0.7;
+                right:6%;
+                margin-bottom: 100px;
+                justify-self: flex-end;
+            }
+            .arrow{
+                display: none;
+            }
+            .arrow:hover{
+                cursor: pointer;
+                opacity:1;
+            }
+            .cast-card{
+                display: flex;
+                flex-direction: column;
+                width:100px;
+                max-height: 70%;
+                border-radius: 10px;
+                margin-right: 30px;
+                color: rgba(240, 255, 255, 0.699);
+                img{
+                    height: 200px;
+                    width: 100px;
+                    border-radius: 10px;
+                    box-shadow: 2px 3px 4px black;
+                }
+                .charac{
+                    height: 50px;
+                    overflow: hidden;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                .name{
+                    margin-top: 20px;
+                    color: rgba(240, 255, 255, 0.847);
+                }
+            }
+        }
+        .cast::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
